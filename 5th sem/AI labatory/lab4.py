@@ -16,7 +16,7 @@ def vacuum(status):
 
 for location, status in places:
     result = vacuum(status)
-    print(f" {result} {location}")
+    print(f" {result} (Location  {location})")
 
 def suck():
     return "Sucking dirt"
@@ -24,6 +24,6 @@ def suck():
 for location, status in places:
     if status == "Dirty":
         result = suck()
-        print(f" {result} {location}")
+        print(f" {result} (Location {location}")
     else:
-        print(f"The place is already clean {location}:")
+        print(f"The place is already clean (Location  {location})")
