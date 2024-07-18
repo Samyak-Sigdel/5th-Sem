@@ -1,0 +1,16 @@
+import csv
+
+# Define the data
+data = [
+    ["Roll", "Name", "Address"],
+    [1, "Ram", "Kathmandu"],
+    [2, "Sita", "Lalitpur"],
+    [3, "Janaki", "Kavre"]
+]
+
+# Write the data to a CSV file
+with open('students.csv', mode='w', newline='') as file:
+    writer = csv.writer(file)
+    writer.writerows(data)
+
+print("CSV file created successfully.")
