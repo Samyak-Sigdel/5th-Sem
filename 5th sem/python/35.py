@@ -8,8 +8,8 @@ mydb = mysql.connector.connect(
 )
 
 mycursor = mydb.cursor()
-sql = "UPDATE Customer SET address = %s WHERE address = %s"
-val = ("Gokarna", "Pulchowk")
+sql = "UPDATE `table` SET address = %s WHERE address = %s"
+val = ("Dolakha", "Bhaktapur")
 
 mycursor.execute(sql, val)
 mydb.commit()

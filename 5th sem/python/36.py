@@ -6,8 +6,8 @@ mydb = mysql.connector.connect(
     database="Database"
 )
 mycursor = mydb.cursor()
-sql = "SELECT * FROM Customer WHERE address = %s"
-adr=("Gokarna", )
+sql = "SELECT * FROM Customers WHERE address = %s"
+adr=("Thimi", )
 mycursor.execute(sql, adr)
 myresult = mycursor.fetchall()
 for x in myresult:

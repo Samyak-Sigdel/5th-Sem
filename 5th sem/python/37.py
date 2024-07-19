@@ -18,7 +18,7 @@ try:
         for row in reader:
             name = row['Name']
             if name.startswith('S') or name.startswith('J'):
-                sql = "INSERT INTO Customer (name) VALUES (%s)"
+                sql = "INSERT INTO 'table' (name) VALUES (%s)"
                 val = (name,)
                 mycursor.execute(sql, val)
 
